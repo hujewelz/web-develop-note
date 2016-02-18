@@ -35,38 +35,38 @@
 * 7.属性节点的 `nodeValue` 是属性的值
 
 ###控制HTML元素
-####getElementById()
+#####getElementById()
 返回带有指定Id的节点对象。<br/>
 语法：
 
 	document.getElementById(Id)
 	
-####getElementsByName() 
+#####getElementsByName() 
 返回带有指定名称的节点对象的集合。<br/>
 语法：
 
 	document.getElementsByName(name)
 
-####getElementsByTagName()
+#####getElementsByTagName()
 返回带有指定标签名的节点对象的集合。返回元素的顺序是它们在文档中的顺序。<br/>
 语法：
 
 	getElementsByTagName(Tagname)
 	
-####访问子节点:childNodes 
+#####访问子节点:childNodes 
 访问选定元素节点下的所有子节点的列表，返回的值可以看作是一个数组，他具有`length`属性。<br/>
 语法：
 
 	elementNode.childNodes
 	
-####访问子结点的第一项:
+#####访问子结点的第一项:
 	 node.firstChild
-####访问子结点的最后项: 
+#####访问子结点的最后项: 
 	node.lastChild
-####访问父节点parentNode: 
+#####访问父节点parentNode: 
 	elementNode.parentNode
 
-####访问兄弟节点:
+#####访问兄弟节点:
 `nextSibling` 属性可返回某个节点之后紧跟的节点（处于同一树层级中）。<br/>
 语法：
 
@@ -78,34 +78,34 @@
 说明：如果无此节点，则该属性返回 `null`。
 
 注意: 两个属性获取的是节点。`Internet Explorer` 会忽略节点间生成的空白文本节点（例如，换行符号），而其它浏览器不会忽略
-####插入节点appendChild()
+#####插入节点appendChild()
 在指定节点的最后一个子节点列表之后添加一个新的子节点。<br/>
 语法：
 
 	appendChild(newnode)
-####插入节点insertBefore()
+#####插入节点insertBefore()
 `insertBefore()` 方法可在已有的子节点前插入一个新的子节点。<br/>
 语法：
 
 	insertBefore(newnode,node); newnode: 要插入的新节点 node: 指定此节点前插入节点
-####删除节点removeChild()
+#####删除节点removeChild()
 `removeChild()` 方法从子节点列表中删除某个节点。如删除成功，此方法可返回被删除的节点，如失败，则返回 `NULL`。<br/>
 语法：
 
 	nodeObject.removeChild(node)
-####替换元素节点replaceChild()
+#####替换元素节点replaceChild()
 `replaceChild` 实现子节点(对象)的替换。返回被替换对象的引用。<br/>
 语法：
 
 	node.replaceChild (newnode,oldnode)
 
-####创建元素节点createElement
+#####创建元素节点createElement
 `createElement()`方法可创建元素节点。此方法可返回一个 Element 对象。<br/>
 语法：
 
 	document.createElement(tagName)
 
-####创建文本节点createTextNode
+#####创建文本节点createTextNode
 `createTextNode()` 方法创建新的文本节点，返回新创建的 Text 节点。<br/>
 语法：
 
