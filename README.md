@@ -1,2 +1,2 @@
 # web-develop-note
-web开发笔记
+[web基础](https://github.com/hujewelz/web-develop-note/blob/master/note/web基础.md)
