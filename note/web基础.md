@@ -1,22 +1,8 @@
 #web基础
 ##1. HTML
 ##2. JavaScript
-###事件
-JavaScript 创建动态页面。事件是可以被 JavaScript 侦测到的行为。 网页中的每个元素都可以产生某些可以触发 JavaScript 函数或程序的事件。
-
-比如说，当用户单击按钮或者提交表单数据时，就发生一个鼠标单击（onclick）事件，需要浏览器做出处理，返回给用户一个结果。
-
-| 事件          | 说明 |
-|:------------:|:---:|
-|onclick		|鼠标单击事件|
-|onmouseover    |鼠标经过事件|	
-|onmouseout     |鼠标移开事件|
-|onchange       |文本框内容改变事件|
-|onselect       |文本框内容被选中事件|
-|onfocus    	|光标聚集  |
-|onblur			|光标离开 |  	
-|onload    		|网页导入 |
-|onunload		|关闭网页  |
+###浏览器渲染引擎的基本渲染流程
+![image](https://github.com/hujewelz/web-develop-note/blob/master/note/resource/1.png)
 
 ###Dom节点类型
 
@@ -29,6 +15,7 @@ JavaScript 创建动态页面。事件是可以被 JavaScript 侦测到的行为
 |Document(文档节点)           |9   |DOCUMENT_NODE|
 |DocumentType(文档类型节点)    |10  |DOCUMENT_TYPE_NODE|
 |DocumentFragment(文档片段节点)|11  |DOCUMENT_FRAGMENT_NODE|
+
 ###节点的nodeName与nodeValue
 | 节点类型                  | nodeName | nodeValue |
 |---------------------------|------------------|------------|
@@ -48,22 +35,25 @@ JavaScript 创建动态页面。事件是可以被 JavaScript 侦测到的行为
 * 7.属性节点的 nodeValue 是属性的值
 
 ###控制HTML元素
-getElementById(): 返回带有指定Id的节点对象。<br/>
+####getElementById()
+返回带有指定Id的节点对象。<br/>
 语法：
 
 	document.getElementById(Id)
 	
-getElementsByName(): 返回带有指定名称的节点对象的集合。<br/>
+####getElementsByName() 
+返回带有指定名称的节点对象的集合。<br/>
 语法：
 
 	document.getElementsByName(name)
 
-getElementsByTagName(): 返回带有指定标签名的节点对象的集合。返回元素的顺序是它们在文档中的顺序。<br/>
+####getElementsByTagName()
+返回带有指定标签名的节点对象的集合。返回元素的顺序是它们在文档中的顺序。<br/>
 语法：
 
 	getElementsByTagName(Tagname)
 	
-####childNodes: 
+####访问子节点:childNodes 
 访问选定元素节点下的所有子节点的列表，返回的值可以看作是一个数组，他具有length属性。<br/>
 语法：
 
@@ -77,11 +67,13 @@ getElementsByTagName(): 返回带有指定标签名的节点对象的集合。�
 	elementNode.parentNode
 
 ####访问兄弟节点:
-1. nextSibling 属性可返回某个节点之后紧跟的节点（处于同一树层级中）。<br/>
+nextSibling 属性可返回某个节点之后紧跟的节点（处于同一树层级中）。<br/>
 语法：
+
 	nodeObject.nextSibling
- 2. previousSibling 属性可返回某个节点之前紧跟的节点（处于同一树层级中）。<br/>
+previousSibling 属性可返回某个节点之前紧跟的节点（处于同一树层级中）。<br/>
 语法：
+
 	nodeObject.previousSibling 
 说明：如果无此节点，则该属性返回 null。
 
@@ -119,5 +111,21 @@ createTextNode() 方法创建新的文本节点，返回新创建的 Text 节点
 
 	document.createTextNode(data) data : 字符串值，可规定此节点的文本
 
-###浏览器渲染引擎的基本渲染流程
-![image](https://github.com/hujewelz/web-develop-note/blob/master/note/resource/1.png)
+
+###事件
+JavaScript 创建动态页面。事件是可以被 JavaScript 侦测到的行为。 网页中的每个元素都可以产生某些可以触发 JavaScript 函数或程序的事件。
+
+比如说，当用户单击按钮或者提交表单数据时，就发生一个鼠标单击（onclick）事件，需要浏览器做出处理，返回给用户一个结果。
+
+| 事件          | 说明 |
+|:------------:|:---:|
+|onclick		|鼠标单击事件|
+|onmouseover    |鼠标经过事件|	
+|onmouseout     |鼠标移开事件|
+|onchange       |文本框内容改变事件|
+|onselect       |文本框内容被选中事件|
+|onfocus    	|光标聚集  |
+|onblur			|光标离开 |  	
+|onload    		|网页导入 |
+|onunload		|关闭网页  |
+
