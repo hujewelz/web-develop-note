@@ -21,3 +21,6 @@
 |Comment(注释节点)            |#comment          |注释的内容|
 |DocumentType(文档类型节点)    |doctype的名称(html)|null|
 |DocumentFragment(文档片段节点)|#document-fragment|null|
+
+###浏览器渲染引擎的基本渲染流程
+![image](https://github.com/hujewelz/web-develop-note/master/raw/note/resource/1.png)
