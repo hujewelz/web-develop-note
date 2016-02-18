@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-02-18 13:42:45
+ * @version $Id$
+ */
+
+* {margin: 0; padding: 0;}
+
+#container {
+	position: relative;
+	width: 1000px;
+	height: 480px;
+	margin: 0 auto;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+}
+
+#container img {
+	position: absolute;
+	border-left: 1px solid #ccc;
+}
