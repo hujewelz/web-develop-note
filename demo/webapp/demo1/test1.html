@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+
+<!-- 相对单位 rem : 以html
+	width: px/rem基值
+	height: px/rem基值
+一般来讲font-size不应该使用rem等相对单位
+
+html { font-size: 32px }
+/*iphone 6*/
+@media (min-device-width: 375px) {
+	html { font-size: 32px }
+}
+
+/*iphone 6 plus*/
+@media (min-device-width: 414px) {
+	html { font-size: 41.4px }
+}
+
+-->
+<style> 
+/*默认320px*/
+
+/* 单行文本溢出
+.inaline {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+}
+
+多行文本溢出
+.intwoline {
+	display: -webkit-box !important;
+	overflow: hidden;
+
+	text-overflow: ellipsis;
+
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp; 2;
+}*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color:rgb(225,225,227);
+}
+
+h2 {
+	padding: 0;
+	margin-top: 8px;
+	margin: 8px 0px 4px 0px;
+}
+
+nav {
+	margin: 0px;
+	width: 100%;
+	height: 40px;
+	background-color: #080808;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 16px;
+}
+ul li {
+	color: #fff;
+	float: left;
+	line-height: 40px;
+	width: 50%;
+	
+}
+
+.wrap {
+	width: 100%;
+	max-height: 1104px;
+	min-height: 480px;
+	/*background-color: yellow;*/
+	
+
+	/*display: -webkit-flex;
+	align-items: center; //子元素垂直居中
+	justify-content: center; //子元素水平居中	*/
+}
+
+.banner {
+	width: 100%;
+	height: 140px;
+	overflow: hidden;
+}
+
+
+.content .item {
+	padding: 0;
+	margin-top: 1px;
+	height: 120px;
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+
+	
+}
+
+.item img {
+	float: left;
+	margin: 20px 15px;
+}
+
+.item .list_content {
+	padding: 10px 10px 10px 0px;
+}
+
+/*.intwoline {
+	display: -webkit-box !important;
+	overflow: hidden;
+
+	text-overflow: ellipsis;
+
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp; 2;
+}*/
+
+</style>
+
+</head>
+<body>
+	<nav>
+		<ul>
+			<li>首页</li>
+			<li>商城</li>
+		</ul>
+    </nav>
+    <div class="wrap">
+    	<div class="banner"><img src="./images/01.png" alt=""></div>
+    	<div class="content">
+    		<div class="item">
+    			<img src="./images/girl.png" width="80px" height="80px">
+    			<div class="list_content">
+    				<h2>随机不健康的</h2>
+    			<span class="intwoline">大家放假了疯了，大家放了谁的放假了多少，减肥减肥了死了烦地方可多了烦死了。斯蒂芬斯蒂芬森，fsfdsfsdfsdfsdf。大幅度释放斯蒂芬dfdsfsdfsdfdsfsdfsdfsdhfksdfhksdfkdshfksdhfkhdskffdskfdksfdfhkdsfhksdfhkdsfkshfkdshfkdhskfheiufeyfirfriufrf99e89</span>
+    			</div>
+    		</div>
+    		<div class="item">
+    			<img src="./images/girl.png" width="80px" height="80px">
+    			<div class="list_content">
+    				<h2>随机不健康的</h2>
+    			<span>大家放假了疯了，大家放了谁的放假了多少，减肥减肥了死了烦地方可多了烦死了。斯蒂芬斯蒂芬森，fsfdsfsdfsdfsdf。大幅度释放斯蒂芬dfdsfsdfsdfdsfsdfsdfsdhfksdfhksdfkdshfksdhfkhdskffdskfdksfdfhkdsfhksdfhkdsfkshfkdshfkdhskfheiufeyfirfriufrf99e89</span>
+    			</div>
+    		</div>
+    		<div class="item">
+    			<img src="./images/girl.png" width="80px" height="80px">
+    			<div class="list_content">
+    				<h2>随机不健康的</h2>
+    			<span>大家放假了疯了，大家放了谁的放假了多少，减肥减肥了死了烦地方可多了烦死了。斯蒂芬斯蒂芬森，fsfdsfsdfsdfsdf。大幅度释放斯蒂芬dfdsfsdfsdfdsfsdfsdfsdhfksdfhksdfkdshfksdhfkhdskffdskfdksfdfhkdsfhksdfhkdsfkshfkdshfkdhskfheiufeyfirfriufrf99e89</span>
+    			</div>
+    		</div>
+    		<div class="item">
+    			<img src="./images/girl.png" width="80px" height="80px">
+    			<div class="list_content">
+    				<h2>随机不健康的</h2>
+    			<span>大家放假了疯了，大家放了谁的放假了多少，减肥减肥了死了烦地方可多了烦死了。斯蒂芬斯蒂芬森，fsfdsfsdfsdfsdf。大幅度释放斯蒂芬dfdsfsdfsdfdsfsdfsdfsdhfksdfhksdfkdshfksdhfkhdskffdskfdksfdfhkdsfhksdfhkdsfkshfkdshfkdhskfheiufeyfirfriufrf99e89</span>
+    			</div>
+    		</div>
+    		<div class="item">
+    			<img src="./images/girl.png" width="80px" height="80px">
+    			<div class="list_content">
+    				<h2>随机不健康的</h2>
+    			<span>大家放假了疯了，大家放了谁的放假了多少，减肥减肥了死了烦地方可多了烦死了。斯蒂芬斯蒂芬森，fsfdsfsdfsdfsdf。大幅度释放斯蒂芬dfdsfsdfsdfdsfsdfsdfsdhfksdfhksdfkdshfksdhfkhdskffdskfdksfdfhkdsfhksdfhkdsfkshfkdshfkdhskfheiufeyfirfriufrf99e89</span>
+    			</div>
+    		</div>
+    	
+    	</div>
+    </div>
+</body>
+</html>
